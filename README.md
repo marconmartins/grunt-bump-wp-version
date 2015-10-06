@@ -1,5 +1,7 @@
 # grunt-bump-wp-version
 
+Bump the WordPress theme version.
+
 > Bump the theme version.
 
 ## Getting Started
