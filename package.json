@@ -1,0 +1,42 @@
+{
+  "name": "grunt-bump-wp-version",
+  "description": "Bump the theme version.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/marconmartins/grunt-bump-wp-version",
+  "author": {
+    "name": "Marco Martins",
+    "email": "marcomartins@fimdalinha.com",
+    "url": "http://fimdalinha.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marconmartins/grunt-bump-wp-version"
+  },
+  "bugs": {
+    "url": "h"
+  },
+  "licenses": [
+    {
+      "type": "GPL2",
+      "url": "https://github.com/marconmartins/grunt-bump-wp-version/blob/master/LICENSE-GPL2"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
