@@ -3,6 +3,7 @@
 grunt-bump-wp-version is a grunt task to bump the WordPress theme version. The WordPress theme version is included in the `style.css` file inside the theme folder.
 
 *2.3.5* => *2.3.6*
+
 *2.3.5-test* => *2.3.5-test.1*
 
 
