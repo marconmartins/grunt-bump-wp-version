@@ -27,22 +27,32 @@ exports.bump_wp_version = {
     // setup here if necessary
     done();
   },
-  default_options: function(test) {
+  noversion: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/default_options');
-    var expected = grunt.file.read('test/expected/default_options');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    var actual   = grunt.file.exists('tmp/style-noversion.css');
+    var expected = false;
+    test.equal(actual, expected, 'Test file with no version.');
 
     test.done();
   },
-  custom_options: function(test) {
+  nonsemversion: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/custom_options');
-    var expected = grunt.file.read('test/expected/custom_options');
-    test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
+    var actual   = grunt.file.read('tmp/style-nonsemversion.css');
+    var expected = grunt.file.read('test/expected/style-nonsemversion.css');
+    test.equal(actual, expected, 'Test file with a non semantic version number.');
 
     test.done();
   },
+  semversion: function(test) {
+    test.expect(1);
+
+    var actual   = grunt.file.read('tmp/style-semversion.css');
+    var expected = grunt.file.read('test/expected/style-semversion.css');
+    test.equal(actual, expected, 'Test file with semantic version number.');
+
+    test.done();
+  },
+
 };
